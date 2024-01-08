@@ -28,7 +28,7 @@ public class UniqueChars {
 
                     if (i==j){
                     newword = newword + start;}               
-                    i++;} /// adding the unique char to the new word
+                    i++;} /// adding the unique char to the word
                               return newword;
   
             }
