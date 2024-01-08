@@ -16,20 +16,20 @@ public class Calendar0 {
 		System.out.println(year + " is a " + commonOrLeap + " year");  
 	}
 
-	// Tests the nDaysInMonth function.
+	
 	private static void nDaysInMonthTest(int year) {
 		for (int month = 1; month <= 12; month++) {
 			int daysInMonth = nDaysInMonth(month, year);
-			System.out.println("Month " + month + " has " + daysInMonth + " days.");
+			System.out.println("Month " + month + " has " + daysInMonth + " days");
 		}
 	}
 
-	// Returns true if the given year is a leap year, false otherwise.
+	
 	public static boolean isLeapYear(int year) {
 		return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 	}
 	 
-	// Returns the number of days in the given month and year.
+	
 	public static int nDaysInMonth(int month, int year) {
 		switch (month) {
 			case 1: case 3: case 5: case 7: case 8: case 10: case 12:
