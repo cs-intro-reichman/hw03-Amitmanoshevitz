@@ -32,7 +32,7 @@ public class LoanCalc{
 	}
 	
 	/**
-	* Uses a sequential search method  ("brute force") to compute an approximation
+	* Uses a sequential search method  ("brute force") to compute anN approximation
 	* of the periodical payment that will bring the ending balance of a loan close to 0.
 	* Given: the sum of the loan, the periodical interest rate (as a percentage),
 	* the number of periods (n), and epsilon, a tolerance level.

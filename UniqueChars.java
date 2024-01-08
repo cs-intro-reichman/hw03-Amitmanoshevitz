@@ -21,7 +21,7 @@ public class UniqueChars {
             int j = 0;
 
             while (j<len){
-            char comp = word.charAt(j); /// finding the char in the j index to compare   
+            char comp = word.charAt(j); //finding the char in the j index to compare   
                     if (comp == start){
                         break;}  
                     j++;}
