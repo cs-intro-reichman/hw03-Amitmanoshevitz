@@ -1,7 +1,7 @@
 /**
 * Computes the periodical payment necessary to re-pay a given loan.
 */
-public class LoanCalc{
+public class loan {
 	
 	static double epsilon = 0.001;  // The computation tolerance (estimation error)
 	static int iterationCounter;    // Monitors the efficiency of the calculation
@@ -32,7 +32,7 @@ public class LoanCalc{
 	}
 	
 	/**
-	* Uses a sequential search method  ("brute force") to compute anN approximation
+	* Uses a sequential search method  ("brute force") to compute an approximation
 	* of the periodical payment that will bring the ending balance of a loan close to 0.
 	* Given: the sum of the loan, the periodical interest rate (as a percentage),
 	* the number of periods (n), and epsilon, a tolerance level.
@@ -63,7 +63,7 @@ public class LoanCalc{
 
     
     /**
-	* Use bisection search to compute an approximation of the periodical payment 
+	* Uses bisection search to compute an approximation of the periodical payment 
 	* that will bring the ending balance of a loan close to 0.
 	* Given: the sum of theloan, the periodical interest rate (as a percentage),
 	* the number of periods (n), and epsilon, a tolerance level.
@@ -72,7 +72,7 @@ public class LoanCalc{
     public static double bisectionSolver(double loan, double rate, int n, double epsilon) {  
              iterationCounter = 0;
         double h = loan;
-        double l = 0;  
+        double l = 0;  // Adjusted the lower bound to 0
         double g = (h + l) / 2;
 
         while ((h - l) > epsilon) {
@@ -94,11 +94,11 @@ public class LoanCalc{
 	* interest rate (as a percentage), the number of periods (n), and the periodical payment.
 	*/
 private static double endBalance(double loan, double rate, int n, double payment) {
-    double balance = loan;
-    double x = payment;
+    double balance = 0;
 
     for (int i = 0; i < n; i++) {
-        balance = (balance - x) * (1 + rate);
+        balance = (loan - payment) * ((rate/100)+1);
+        loan = balance;
     }
 
     return balance;
