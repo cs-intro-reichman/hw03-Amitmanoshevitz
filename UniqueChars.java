@@ -3,7 +3,7 @@ public class UniqueChars {
     public static void main(String[] args) {
         String word = args[0];
         System.out.println(UniqueChars(word)); }   
-        //// what the method does:
+        //// what the method does
         /// checking if the char at the first index is uqule to the second
         /// if it does it'll not be adding them to the new word
         /// if its unique it'll add the char to the new word. 

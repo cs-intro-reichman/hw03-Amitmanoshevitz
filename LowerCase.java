@@ -1,11 +1,11 @@
 public class LowerCase { 
     public static void main(String[] args) {
      	String word = args[0];
-		System.out.println(LowerCase(word));
+		System.out.println(lowerCase(word));
 
    }
 
-  public static String LowerCase(String word) {
+  public static String lowerCase(String word) {
   	String newword = "";
         int len = word.length();
         
