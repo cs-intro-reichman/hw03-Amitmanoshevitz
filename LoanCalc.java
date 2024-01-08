@@ -63,7 +63,7 @@ public class LoanCalc{
 
     
     /**
-	* Uses bisection search to compute an approximation of the periodical payment 
+	* Use bisection search to compute an approximation of the periodical payment 
 	* that will bring the ending balance of a loan close to 0.
 	* Given: the sum of theloan, the periodical interest rate (as a percentage),
 	* the number of periods (n), and epsilon, a tolerance level.

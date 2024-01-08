@@ -13,7 +13,7 @@ public class LowerCase {
         /////// now Im changing from char to ASCII numbers
         ////// when there is a capital letter it is in the range of 65 to 90
         ////// I change it to lowercase letters by bringing them 32 tabs in the ASCII tabel
-        ////// the I change it back to char when the number represent a lower class letter
+        ////// the I change it back to char when the number represent a lower class 
 
         for (int i=0;i<len ;i++) {
       	char c = word.charAt(i);
