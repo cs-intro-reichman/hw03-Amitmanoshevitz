@@ -45,6 +45,7 @@ public class LoanCalc {
 			iterationCounter1++;
 
 		}
+		return g;
     }
 
     
