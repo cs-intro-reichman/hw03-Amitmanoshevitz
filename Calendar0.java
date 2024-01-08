@@ -1,10 +1,6 @@
-/*
- * Checks if a given year is a leap year or a common year,
- * and computes the number of days in a given month and a given year. 
- */
+
 public class Calendar0 {	
 	
-	// Gets a year (command-line argument), and tests the functions isLeapYear and nDaysInMonth.
 	public static void main(String args[]) {
 		int year = Integer.parseInt(args[0]);
 		isLeapYearTest(year);
