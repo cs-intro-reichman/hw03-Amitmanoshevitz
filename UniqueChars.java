@@ -1,7 +1,7 @@
 /** String processing exercise 2. */
 public class UniqueChars { 
     public static void main(String[] args) {
-     	String word = args[0];
+        String word = args[0];
         System.out.println(UniqueChars(word)); }   
         //// what the method does:
         /// checking if the char at the first index is uqule to the second
@@ -35,5 +35,3 @@ public class UniqueChars {
         
         
 }
-
-
