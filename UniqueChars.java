@@ -20,19 +20,16 @@ public class UniqueChars {
             char start = word.charAt(i);
             int j = 0;
 
-            while (j<len){
-            char comp = word.charAt(j); //finding the char in the j index to compare   
-                    if (comp == start){
-                        
-                        break;}  
-                    j++;}
+            
+            while (j < len) {
+                char comp = word.charAt(j);
+                if (comp == start && i != j) {
+                    break;}
+                j++;}
 
-                    if (i==j){
-                    newword = newword + start;}               
-                    i++;} /// adding the unique char to the word
-                              return newword;
-  
-            }
-        
-        
+            if (j == len) {
+                newword = newword + start;
+            i++; }
+        return newword;
+    }
 }
