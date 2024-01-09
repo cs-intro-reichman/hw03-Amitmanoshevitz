@@ -12,7 +12,7 @@ public class UniqueChars {
         
     public static String UniqueChars(String word) {
         char first = word.charAt(0);
-         String newword = first + "";
+        String newword = first + "";
         int i = 1;
         int len = word.length(); 
 
@@ -23,6 +23,7 @@ public class UniqueChars {
             while (j<len){
             char comp = word.charAt(j); //finding the char in the j index to compare   
                     if (comp == start){
+                        
                         break;}  
                     j++;}
 
