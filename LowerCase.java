@@ -22,7 +22,7 @@ public class LowerCase {
       		char e = (char)d;
       		newword = newword + e;}
 
-      	else{ newword = newword + word.charAt(i);}
+      	else{ newword = newword + word.charAt(i)+" ";}
 
         }	
 
