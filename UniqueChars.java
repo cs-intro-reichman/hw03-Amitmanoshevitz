@@ -1,5 +1,5 @@
-/** String processing exercise 2. */
-public class UniqueChars { 
+
+public class UniqueChars2 { 
     public static void main(String[] args) {
         String word = args[0];
         System.out.println(UniqueChars(word)); }   
@@ -8,7 +8,6 @@ public class UniqueChars {
         /// if it does it'll not be adding them to the new word
         /// if it unique it'll add the char to the new word. 
         /// aftere im done it'll move to check if the char at the second index is = to the first
-
         
     public static String UniqueChars(String word) {
         char first = word.charAt(0);
@@ -26,7 +25,7 @@ public class UniqueChars {
                         break;}  
                     j++;}
 
-                    if (i==j){
+                    if (i==j|| start==' '){
                     newword = newword + start;}               
                     i++;} /// adding the unique char to the word
                               return newword;
