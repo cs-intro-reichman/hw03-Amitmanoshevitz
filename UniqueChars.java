@@ -1,5 +1,5 @@
 
-public class UniqueChars2 { 
+public class UniqueChars { 
     public static void main(String[] args) {
         String word = args[0];
         System.out.println(UniqueChars(word)); }   
